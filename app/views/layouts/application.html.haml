@@ -1,0 +1,35 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= Settings.site.name
+
+    = stylesheet_link_tag "application/application", :media => :all
+    = javascript_include_tag "application/application"
+    /[if IE]
+      = javascript_include_tag "hacks/PIE"
+
+  %body
+    = #render :partial => "layouts/schema"
+    / color picker
+    / START HEADER
+    .header.head-pat6
+      .container_12
+        / START HEADING
+        .heading
+          / START LOGO
+          .logo
+            %a{:href => "index.html"}
+              = image_tag "application/logo.png"
+          / END LOGO
+          / START NAVIGATION
+          = render :partial => "layouts/menu"
+          / END NAVIGATION
+        / END HEADING
+      / START SLIDER
+      - if @render_slider
+        = render :partial => "layouts/slider"
+      = #image_tag 'http://img.bitpixels.com/getthumbnail?code=53480&size=200&url=http://cnn.com'
+      / END SLIDER
+    / END HEADER
+    = yield

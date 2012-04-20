@@ -1,0 +1,20 @@
+<div class="container_12">
+  
+<div class="grid_4">&nbsp;</div>
+<div class="grid_4">
+
+  <h2><%= t("devise.sessions.new") %></h2>
+  <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "cmxform"}) do |f| %>
+    <fieldset>
+      <%= f.input :email, :required => false, :autofocus => true, :input_html => {:class => "textInput"} %>
+      <%= f.input :password, :required => false, :input_html => {:class => "textInput"} %>
+      <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
+      <%= f.button :submit, t("devise.button.login"), :class => "button blue" %>
+    </fieldset>
+  <% end %>
+  
+  <%= render "links" %>
+</div>
+<div class="grid_4">&nbsp;</div>
+
+</div>

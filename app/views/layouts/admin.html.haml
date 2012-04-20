@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title= Settings.site.name
+    = stylesheet_link_tag    "admin/admin", :media => "all"
+    = javascript_include_tag "admin/admin"
+    = csrf_meta_tags
+  %body
+    = render :partial => "layouts/admin_menu"
+    .container-fluid
+      .row-fluid
+        .span2
+          = render :partial => "layouts/sidebar"
+        .span10
+          = yield

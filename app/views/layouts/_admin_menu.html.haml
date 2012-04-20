@@ -1,0 +1,12 @@
+.navbar.navbar-fixes-top
+  .navbar-inner.no_radius
+    .container
+      = link_to Settings.site.name, dashboard_path, :class => "brand"
+      .nav-collapse
+        %ul.nav
+          %li= link_to t("sites.title"), sites_path
+          %li= link_to t("domains"), "#"
+          %li= link_to t("databases"), "#"
+        %ul.nav.pull-right
+          %li.divider-vertical
+          %li= link_to t("sign_out"), destroy_user_session_path, :method => :delete

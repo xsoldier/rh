@@ -1,0 +1,260 @@
+=# render :partial => "layouts/slider"
+/ START TOP
+.top-home
+  .container_12
+    .teaser
+      .grid_9
+        %span.teaser-text Ac vel diam tristique pellentesque sit in parturient dolor lorem arcu sit, platea! Pid ultricies massa velit natoque a, sagittis turpis integer placerat. Tristique ultricies elementum aliquam.
+      .grid_3
+        %a.teaser-button YOUR TEXT HERE
+/ END TOP
+/ START FEATURE
+.feature
+  .container_12
+    .grid_4
+      .services
+        %h2
+          6 types of slideshow and home pages
+          = image_tag "application/content/icons/home/64/home.png"
+        %p Elementum sed pid nunc, placerat quis parturient dolor, sit nascetur? Mid placerat vel, cum scelerisque diam.
+    .grid_4
+      .services
+        %h2
+          6 types of price plan templates
+          = image_tag "application/content/icons/home/64/sale.png"
+        %p Elementum sed pid nunc, placerat quis parturient dolor, sit nascetur? Mid placerat vel, cum scelerisque diam.
+    .grid_4
+      .services
+        %h2
+          7 types of portfolio templates
+          = image_tag "application/content/icons/home/64/chart_up.png"
+        %p Elementum sed pid nunc, placerat quis parturient dolor, sit nascetur? Mid placerat vel, cum scelerisque diam.
+    .clear
+    .grid_4
+      .services
+        %h2
+          960 Grid System & Cool Design & Markup Standart
+          = image_tag "application/content/icons/home/64/accept.png"
+        %p Elementum sed pid nunc, placerat quis parturient dolor, sit nascetur? Mid placerat vel, cum scelerisque diam.
+    .grid_4
+      .services
+        %h2
+          12 nice background patterns and Unlimited color schemes
+          = image_tag "application/content/icons/home/64/color.png"
+        %p Elementum sed pid nunc, placerat quis parturient dolor, sit nascetur? Mid placerat vel, cum scelerisque diam.
+    .grid_4
+      .services
+        %h2
+          9 color types of Buttons, Tables, Boxes, Accordions, Tabs, Toggles
+          = image_tag "application/content/icons/home/64/promotion.png"
+        %p Elementum sed pid nunc, placerat quis parturient dolor, sit nascetur? Mid placerat vel, cum scelerisque diam.
+/ END FEATURE
+/ START MAIN
+.main.main-home
+  .container_12
+    .grid_4
+      %h2 What We Do
+      #tabs.white
+        %ul.white
+          %li
+            %h3
+              %a{:href => "#tabs-1"} Web design
+          %li
+            %h3
+              %a{:href => "#tabs-2"} Free bie
+        #tabs-1
+          %p Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo
+        #tabs-2
+          %p Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet
+    .grid_8_no_margin
+      %h2 Featured Works
+      .fw-pager
+        %a{:href => "#"}
+          %span#prev &lt;
+        %a{:href => "#"}
+          %span#next &gt;
+      .featured-works
+        .featured-works-item
+          .grid_4.fw-imgs
+            .featured-works-image.preload
+              = image_tag "application/content/featured-products/1.jpg"
+            .featured-works-image.preload
+              = image_tag "application/content/featured-products/2.jpg"
+            .featured-works-image.preload
+              = image_tag "application/content/featured-products/4.jpg"
+            .featured-works-image.preload
+              = image_tag "application/content/featured-products/3.jpg"
+          .grid_4
+            %h2 Enim ultricies ut non augue eu dignissim, porta eros sit, facilisis
+            %p Enim ultricies ut non augue eu dignissim, porta eros sit, facilisis a augue, placerat integer, adipiscing. Porttitor! Lacus, adipiscing integer elementum ac in turpis? Sit cum ac tortor adipiscing, odio.
+            %span
+              %a.readmore{:href => "#"} Read More
+        .featured-works-item
+          .grid_4.fw-imgs
+            .featured-works-image.preload
+              = image_tag "application/content/featured-products/1.jpg"
+            .featured-works-image.preload
+              = image_tag "application/content/featured-products/4.jpg"
+          .grid_4
+            %h2 Enim ultricies ut non augue eu dignissim, porta eros sit
+            %p Enim ultricies ut non augue eu dignissim, porta eros sit, facilisis a augue, placerat integer, adipiscing.
+            %span
+              %a.readmore{:href => "#"} Read More
+/ END MAIN
+/ START BOTTOM
+.bottom.head-pat6
+  .container_12
+    .grid_8
+      .products-widget
+        %h1 Latest works
+        .featured-products
+          .grid_2.product.preload
+            = image_tag "application/content/featured-works/1.jpg"
+            %span.product-name
+              %a{:href => "#"} Dapibus turpis
+            %span.product-price 2008
+          .grid_2.product.preload
+            = image_tag "application/content/featured-works/2.jpg"
+            %span.product-name
+              %a{:href => "#"} Purus augue
+            %span.product-price 2010
+          .grid_2.product.preload
+            = image_tag "application/content/featured-works/3.jpg"
+            %span.product-name
+              %a{:href => "#"} Ac placerat
+            %span.product-price 2009
+          .grid_2.product.preload
+            = image_tag "application/content/featured-works/4.jpg"
+            %span.product-name
+              %a{:href => "#"} Lundium
+            %span.product-price 2010
+          .grid_2.product.preload
+            = image_tag "application/content/featured-works/5.jpg"
+            %span.product-name
+              %a{:href => "#"} Dapibus turpis
+            %span.product-price 2011
+      .clearfix
+      .fp-pager
+        %a#foo2_prev.prev{:href => "#"}
+          %span &lt;
+        %a#foo2_next.next{:href => "#"}
+          %span &gt;
+    .grid_4
+      .testiominals-widget
+        %h1 Testiominals
+        .fp-pager
+          %a.tprev{:href => "#"} &lt;
+          %a.tnext{:href => "#"} &gt;
+        .testiominals
+          .testiominals-item
+            %span Nisi rhoncus risus cursus in enim! Sit ridiculus mauris aliquet, lacus est magnis dolor. Adipiscing. Placerat phasellus egestas? Amet placerat adipiscing cum tincidunt purus!
+            .testiominals-name Battumur THEMETON.COM CEO FOUNDER
+          .testiominals-item
+            %span Adipiscing. Placerat phasellus egestas? Amet placerat adipiscing cum tincidunt purus! Eros. Lundium nunc proin, ac sit.
+            .testiominals-name Olziibat THEMETON.COM CEO FOUNDER
+/ END BOTTOM
+/ START FOOTER
+.footer
+  .container_12
+    .grid_4_no_margin
+      %h1 Recent News
+      %ul.recent-news
+        %li.recent-news-item
+          .date
+            %span.day 25
+            %span.month Dec
+          .post-data
+            %a{:href => "#"} Magna aenean ultrices auctor.
+        %li.recent-news-item
+          .date
+            %span.day 28
+            %span.month feb
+          .post-data
+            %a{:href => "#"} Magna aenean ultrices auctor, pellentesque enim. Magna aenean ultrices auctor, lorem.
+        %li.recent-news-item
+          .date
+            %span.day 13
+            %span.month jan
+          .post-data
+            %a{:href => "#"} Elementum sed pid nunc, placerat quis parturient dolor
+        %li.recent-news-item
+          .date
+            %span.day 28
+            %span.month feb
+          .post-data
+            %a{:href => "#"} Magna aenean ultrices auctor, pellentesque enim.
+    .grid_4
+      .twitter-head
+        %h1 Twitter
+        %a.readmore.tw{:href => "#"} Follow Me
+      .tweet
+/ END FOOTER
+.clear
+/ START FOOTER-BOTTOM
+.footer-bottom.head-pat6
+  .container_12
+    .grid_3
+      %h1 Quick navigation
+      %ul.footer-list
+        %li.two-col
+          %a{:href => "index.html"} Home
+        %li.two-col
+          %a{:href => "contact.html"} About
+        %li.two-col
+          %a{:href => "portfolio-three-column.html"} Portfolio
+        %li.two-col
+          %a{:href => "blog-left-sidebar.html"} Blog
+        %li.two-col
+          %a{:href => "contact.html"} Contact
+    .grid_3
+      %h1 Blogroll
+      %ul.footer-list
+        %li
+          %a{:href => "http://notes.envato.com"} notes.envato.com
+        %li
+          %a{:href => "http://www.smashingmagazine.com"} www.smashingmagazine.com
+        %li
+          %a{:href => "http://codex.wordpress.org"} codex.wordpress.org
+    .grid_3
+      %h1 Newsletter
+      .social-icons
+        %ul.social-icons-list
+          %li
+            = link_to image_tag("application/content/footer-social-icons/facebook.png", :class => "tiptip"), ""
+          %li
+            = link_to image_tag("application/content/footer-social-icons/twitter.png", :class => "tiptip"), ""
+    .grid_3
+      %h1 Location
+      %span.address
+        Suite 7, 13-15 Smail St Ultimo,
+        %br>/
+        Sydney, Australia
+      %span.phone +976-123-456-789
+      %span.mail name@yourdomain.com
+/ END FOOTER-BOTTOM
+/ START SUB-FOOTER
+.sub-footer
+  .container_12
+    .footer-menu
+      %ul.footer-menu-list
+        %li
+          %a{:href => "index.html"} Home
+        %li
+          %a{:href => "contact.html"} About
+        %li
+          %a{:href => "portfolio-three-column.html"} Portfolio
+        %li
+          %a{:href => "blog-right-sidebar.html"} Blog
+        %li
+          %a{:href => "contact.html"} Contact Us
+    .copyrights
+      %span
+        All Rights Reserved @ 2010 ThemeTON. Powered by:
+        %a{:href => "http://wordpress.org"} Wordpress
+        Designed by:
+        %a{:href => "http://www.themeton.com"} ThemeTON
+        Hosted by:
+        %a{:href => "http://www.mediatemple.net"} MediaTemple
+/ END SUB-FOOTER
+:javascript
+  Cufon.now();

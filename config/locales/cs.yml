@@ -1,0 +1,14 @@
+cs:
+  menu:
+    home: Domu
+    pricing: Ceny
+    login: "Admin"
+  sign_out: "Odhlásit"
+  sites:
+    title: Moje aplikace
+    index:
+      new: Nová aplikace
+  domains: "Domény"
+  databases: "Databáze"
+  actions: "Akce"
+

@@ -1,0 +1,29 @@
+<%= sidebar(t(".new"), new_site_path) %>
+<h1><%= t("sites.title") %></h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Git path</th>
+      <th>Size</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% collection.each do |resource| %>
+    <tr>
+      <td><%= resource.name %></td>
+      <td><%= resource.status %></td>
+      <td><%= resource.git_path %></td>
+      <td><%= resource.size %></td>
+      <td><%= link_to 'Show', resource %></td>
+      <td><%= link_to 'Edit', edit_site_path(resource) %></td>
+      <td><%= link_to 'Destroy', resource, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @site.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @site.status %>
+</p>
+
+<p>
+  <b>Git path:</b>
+  <%= @site.git_path %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @site.size %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>
